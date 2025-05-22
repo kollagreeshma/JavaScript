@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function a(){
+                let x=parseInt(document.getElementById('num 1').value);
+                let y=parseInt(document.getElementById('num 2').value);
+                document.getElementById('a').innerHTML="x value :"+x;
+                document.getElementById('b').innerHTML="y value :"+y;
+            }
+        </script>
+    </head>
+     <boby>
+        Number1:<input type="number" placeholder="Enter num1:"id="num 1"><br>
+        Number2:<input type="number" placeholder="Enter num2:"id="num 2"><br>
+        <button onclick="a()">print value</button>
+        <p id="a"></p>
+        <p id="b"></p>
+     </boby>
+</html>
