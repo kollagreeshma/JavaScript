@@ -1,0 +1,28 @@
+<htm>
+    <head>
+        <script>
+            function a()
+            {
+                var x=parseInt(document.getElementById("r").value);
+                var c=0;
+                for(var i=1;i<=x;i++)
+                {
+                    if((x%i)==0){
+                    c++;
+                }
+            }
+            if(c==2){
+                 document.writeln("Prime Numbers");
+            }
+            else{
+                document.writeln("Not a Prime Number");
+            }
+            }
+        </script>
+    </head>
+    <boby>
+        Enter to show the output<input type="text" id="r">
+        <button onclick="a()">Run</button>
+        <p id="r"></p>
+    </boby>
+</htm>
