@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>//hole square 
+            function b(){
+                var x = parseInt(document.getElementById("r").value);
+                for(var i=0;i<x;i++){
+                    for(var j=0;j<x;j++){
+                        if(i==j||i==x-1||j==0){
+                            document.write("*"+" ");
+                        }else{
+                            document.write("&nbsp&nbsp&nbsp");
+                        }
+                    }
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Enter number value<input type="text" id="r">
+        <button onclick="b()">Run</button>
+    </body>
+</html>
