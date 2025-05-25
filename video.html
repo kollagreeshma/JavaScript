@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="prgm.css">
+        <style>
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+            .video-card {
+                width: 320px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                background: white;
+                border-radius: 8px;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+                cursor: pointer;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .video-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            }
+            video {
+                width: 100%;
+                height: 180px;
+                display: block;
+            }
+            .video-info {
+                padding: 10px;
+            }
+            .video-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0 0 5px 0;
+                color: #333;
+            }
+            .video-description {
+                font-size: 14px;
+                color: #666;
+                margin: 0;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const videoCards = document.querySelectorAll('.video-card');
+                videoCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.backgroundColor = '#e0f7fa';
+                    });
+                    card.addEventListener('mouseleave', () => {
+                        card.style.backgroundColor = 'white';
+                    });
+                    card.addEventListener('click', () => {
+                        alert('Video clicked: ' + card.querySelector('.video-title').textContent);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 1</p>
+                <p class="video-description">This is a sample description for video 1.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 2</p>
+                <p class="video-description">This is a sample description for video 2.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 3</p>
+                <p class="video-description">This is a sample description for video 3.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 4</p>
+                <p class="video-description">This is a sample description for video 4.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 5</p>
+                <p class="video-description">This is a sample description for video 5.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 6</p>
+                <p class="video-description">This is a sample description for video 6.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 7</p>
+                <p class="video-description">This is a sample description for video 7.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 8</p>
+                <p class="video-description">This is a sample description for video 8.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 9</p>
+                <p class="video-description">This is a sample description for video 9.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <p class="video-title">Sample Video 10</p>
+                <p class="video-description">This is a sample description for video 10.</p>
+            </div>
+        </div>
+    </body>
+</html>
